@@ -14,11 +14,11 @@ O **Prazo Prisão** é uma ferramenta web de alta performance desenhada especifi
 Abaixo, algumas capturas da interface em funcionamento:
 
 ````carousel
-![Estado Inicial](/Users/mistermagson/.gemini/antigravity/brain/144f2bc6-942c-4662-a89b-a575d35f947e/.system_generated/click_feedback/click_feedback_1776348311190.png)
+![Estado Inicial](assets/screenshots/initial-state.png)
 <!-- slide -->
-![Cadastro de Processo](/Users/mistermagson/.gemini/antigravity/brain/144f2bc6-942c-4662-a89b-a575d35f947e/.system_generated/click_feedback/click_feedback_1776348319853.png)
+![Cadastro de Processo](assets/screenshots/add-process.png)
 <!-- slide -->
-![Dashboard com Alertas](/Users/mistermagson/.gemini/antigravity/brain/144f2bc6-942c-4662-a89b-a575d35f947e/.system_generated/click_feedback/click_feedback_1776348337527.png)
+![Dashboard com Alertas](assets/screenshots/dashboard-alerts.png)
 ````
 
 ## ✨ Principais Diferenciais
