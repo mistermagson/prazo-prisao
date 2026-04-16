@@ -9,16 +9,35 @@ O **Prazo Prisão** é uma ferramenta web de alta performance desenhada especifi
 
 ---
 
+## 📸 Demonstração Visual
+
+Abaixo, algumas capturas da interface em funcionamento:
+
+````carousel
+![Estado Inicial](/Users/mistermagson/.gemini/antigravity/brain/144f2bc6-942c-4662-a89b-a575d35f947e/.system_generated/click_feedback/click_feedback_1776348311190.png)
+<!-- slide -->
+![Cadastro de Processo](/Users/mistermagson/.gemini/antigravity/brain/144f2bc6-942c-4662-a89b-a575d35f947e/.system_generated/click_feedback/click_feedback_1776348319853.png)
+<!-- slide -->
+![Dashboard com Alertas](/Users/mistermagson/.gemini/antigravity/brain/144f2bc6-942c-4662-a89b-a575d35f947e/.system_generated/click_feedback/click_feedback_1776348337527.png)
+````
+
 ## ✨ Principais Diferenciais
 
-- **Design "Premium Soft-Glass"**: Interface moderna, intuitiva e com suporte nativo ao modo escuro, focada na redução da carga cognitiva.
-- **Cálculo Automatizado**: Insira a data da prisão e o sistema calcula instantaneamente o 91º dia (prazo limite para a revisão fundamentada).
-- **Alertas Inteligentes**:
-  - 🟢 **Seguro**: Mais de 15 dias para o vencimento.
-  - 🟡 **Atenção**: Entre 6 e 15 dias para o vencimento.
-  - 🔴 **Crítico**: Menos de 5 dias para o vencimento (dispara alerta sonoro e notificação de navegador).
+- **Design "Premium Soft-Glass"**: Interface moderna, intuitiva e com suporte nativo ao modo escuro e alta legibilidade.
+- **Cálculo Art. 316 CPP**: Lógica automatizada que calcula o prazo de 90 dias a partir da data de prisão/revisão, ignorando offsets de fuso horário.
+- **Alertas de Urgência**: Cores dinâmicas (Verde, Amarelo, Vermelho) baseadas nos dias restantes.
+- **Notificações Inteligentes**: Integração com a Web Notifications API para alertas de navegador e sons de aviso para prazos críticos (≤ 5 dias).
 - **Privacidade Total**: Nenhum dado é enviado para servidores. Todas as informações dos processos são armazenadas exclusivamente no seu navegador via `localStorage`.
-- **Zero Dependências**: Funciona em qualquer navegador moderno sem necessidade de instalação ou internet.
+
+---
+
+## 🛠️ Validação Técnica
+
+O sistema passou pelos seguintes critérios de qualidade:
+
+- **Lógica de Datas**: Validada com múltiplos marcos temporais para garantir precisão absoluta no cálculo de 90 dias.
+- **Responsividade**: Mobile-first design testado em múltiplas resoluções.
+- **Acessibilidade & UX**: Contraste otimizado e feedback auditivo configurado para situações críticas.
 
 ---
 
