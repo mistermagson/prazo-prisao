@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prazo Prisão | Gestão de Prazos 90 Dias (CPP)</title>
+    <meta name="description" content="Gestor inteligente de prazos de prisão preventiva conforme Art. 316 do CPP.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.icons8.com/isometric/50/scales.png" type="image/x-icon">
+</head>
+<body class="dark-mode">
+    <div class="app-container">
+        <header class="main-header">
+            <div class="brand">
+                <img src="https://img.icons8.com/isometric/100/scales.png" alt="Logo" class="logo">
+                <div class="brand-text">
+                    <h1>Prazo Prisão</h1>
+                    <p>Controle de Revisão (Art. 316 CPP)</p>
+                </div>
+            </div>
+            <button id="add-btn" class="btn-primary">
+                <span class="icon">+</span> Novo Processo
+            </button>
+        </header>
+
+        <main class="dashboard">
+            <section class="stats-overview">
+                <div class="stat-card" id="stat-total">
+                    <span class="stat-label">Total Gênciados</span>
+                    <span class="stat-value">0</span>
+                </div>
+                <div class="stat-card critical" id="stat-critical">
+                    <span class="stat-label">Críticos (≤ 5 dias)</span>
+                    <span class="stat-value">0</span>
+                </div>
+                <div class="stat-card warning" id="stat-warning">
+                    <span class="stat-label">Atenção (≤ 15 dias)</span>
+                    <span class="stat-value">0</span>
+                </div>
+            </section>
+
+            <section class="process-grid" id="process-list">
+                <!-- Process cards will be injected here -->
+                <div class="empty-state">
+                    <img src="https://img.icons8.com/isometric/200/empty-box.png" alt="Vazio">
+                    <h3>Nenhum processo cadastrado</h3>
+                    <p>Adicione processos penais para monitorar os prazos de 90 dias.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 Prazo Prisão. Desenvolvido para auxílio jurídico.</p>
+        </footer>
+    </div>
+
+    <!-- Modal for adding process -->
+    <div id="modal-backdrop" class="modal-backdrop hidden">
+        <div class="modal-content glass-effect">
+            <button id="close-modal" class="btn-close">&times;</button>
+            <h2>Novo Processo Preventivo</h2>
+            <form id="process-form">
+                <div class="form-group">
+                    <label for="process-number">Número do Processo (CNJ)</label>
+                    <input type="text" id="process-number" placeholder="0000000-00.0000.0.00.0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="arrest-date">Data da Prisão (ou última revisão)</label>
+                    <input type="date" id="arrest-date" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="cancel-btn" class="btn-secondary">Cancelar</button>
+                    <button type="submit" class="btn-primary">Salvar e Monitorar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Audio for alerts -->
+    <audio id="alert-sound" src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3"></audio>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
