@@ -14,11 +14,11 @@ O **Prazo Prisão** é uma ferramenta web de alta performance desenhada especifi
 Abaixo, algumas capturas da interface em funcionamento:
 
 ````carousel
-![Estado Inicial](/assets/screenshots/initial-state.png)
+![Estado Inicial](https://github.com/mistermagson/prazo-prisao/blob/main/assets/screenshots/add-process.png)
 <!-- slide -->
-![Cadastro de Processo](/assets/screenshots/add-process.png)
+![Cadastro de Processo](https://github.com/mistermagson/prazo-prisao/blob/main/assets/screenshots/add-process.png)
 <!-- slide -->
-![Dashboard com Alertas](/assets/screenshots/dashboard-alerts.png)
+![Dashboard com Alertas](https://github.com/mistermagson/prazo-prisao/blob/main/assets/screenshots/dashboard-alerts.png)
 ````
 
 ## ✨ Principais Diferenciais
